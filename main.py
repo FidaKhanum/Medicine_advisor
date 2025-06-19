@@ -2,6 +2,7 @@ from flask import Flask, request, render_template  # Import jsonify
 import numpy as np
 import pandas as pd
 import pickle
+import os
 
 # flask app
 app = Flask(__name__)
@@ -89,4 +90,5 @@ def blog():
     return render_template("blog.html")
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port, debug=True)
