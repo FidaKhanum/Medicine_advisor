@@ -38,4 +38,6 @@ Flask: To serve the model as a REST API.
 # Frontend:
 
 Languages: HTML, CSS, JavaScript
+![image](https://github.com/user-attachments/assets/5c33a857-9fc3-4814-b3c4-bfd6c4eb4a94)
+
 
